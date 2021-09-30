@@ -1,0 +1,84 @@
+/* mobile version
+width: 375px */
+
+@font-face {
+    font-family: Inter;
+    src: url(https://fonts.google.com/specimen/Inter);
+    font-weight: 400, 700;
+}
+@font-face {
+    font-family: Lexend Deca;
+    src: url(https://fonts.google.com/specimen/Lexend+Deca);
+    font-weight: 400;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    margin: 0;
+}
+main{
+    background-color: hsl(244, 38%, 16%) !important;
+    font-family: Inter;
+    width: 80%;
+    height: fit-content;
+    margin: 10%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+
+.content{
+    padding: 10%;
+    padding-right: 15%;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 2vw;
+}
+.text-pink{
+    color: hsl(277, 64%, 61%) !important;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: left;
+    font-size: 13px;
+    margin-right: 5%;
+    padding-right: 15%;
+}
+
+.analytic{
+    font-family: Lexend Deca;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(3, 30%);
+    margin: 1vw 0 0 0;
+}
+h3{
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+    margin-bottom: 0.1vw;
+}
+figure{
+    position: relative;
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+figure::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: hsl(278, 62%, 35%);
+  border-radius: 0 10px 10px 0;
+  opacity: .6;
+  z-index: 1;
+}
+figure>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
